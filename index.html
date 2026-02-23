@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サロン集客 無料個別相談 | 期間限定10名様限定</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+    }
+
+    /* ── Hero gradient: white → pale sky blue ── */
+    .bg-hero {
+      background: linear-gradient(160deg, #f0f9ff 0%, #dbeafe 55%, #e0f2fe 100%);
+    }
+
+    /* ── Primary CTA button ── */
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(135deg, #0077B6 0%, #0096C7 100%);
+      box-shadow: 0 6px 22px rgba(0, 119, 182, 0.38);
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #005f8e 0%, #0077B6 100%);
+      box-shadow: 0 10px 32px rgba(0, 119, 182, 0.5);
+      transform: translateY(-2px);
+    }
+
+    /* ── Subtle pulse for urgency badges ── */
+    .pulse-badge {
+      animation: badge-pulse 2.2s ease-in-out infinite;
+    }
+    @keyframes badge-pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.72; }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 antialiased leading-relaxed">
+
+
+  <!-- ======================================================
+       SECTION A  HERO
+  ====================================================== -->
+  <section class="bg-hero px-5 py-16 md:py-24">
+    <div class="max-w-2xl mx-auto text-center">
+
+      <!-- Target callout -->
+      <p class="text-blue-600 font-semibold text-sm md:text-base tracking-widest mb-5">
+        サロン経営で集客にお悩みのサロンオーナー様へ
+      </p>
+
+      <!-- Limited-spots badge (red border + bg, pulsing) -->
+      <div class="inline-block border border-red-400 bg-red-50 text-red-600 font-bold text-sm px-5 py-2 rounded-full mb-8 pulse-badge">
+        ⚠ 期間限定：10名様限定 無料個別相談
+      </div>
+
+      <!-- Main headline -->
+      <h1 class="text-3xl md:text-5xl font-black text-gray-900 leading-tight mb-6 text-center">
+        安売りを卒業し<br>
+        <span class="text-blue-600">高単価満席サロン</span>へ。
+      </h1>
+
+      <!-- Sub copy -->
+      <p class="text-base md:text-lg text-gray-600 leading-loose mb-10">
+        論理と構造で課題を特定し、<strong class="text-gray-800">最短最速</strong>で<br>
+        高単価満席サロンへ近づける無料個別相談を<br>
+        期間限定で開催します。
+      </p>
+
+      <!-- Urgency micro-copy + CTA buttons -->
+      <p class="text-red-500 font-bold text-sm mb-4 tracking-wide">▼ 残り枠あとわずか！今すぐ個別相談を予約！</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://liff.line.me/2009174784-0WuronMg?liff_id=2009174784-0WuronMg&is=xxIhcQGyML"
+           class="btn-primary text-white font-bold text-lg px-8 py-4 rounded-2xl text-center">
+          無料相談に応募する →
+        </a>
+        <a href="https://www.notion.so/5-3067c8960fd480c8955cfa18896edad2?source=copy_link"
+           class="inline-block border-2 border-blue-600 text-blue-600 bg-white font-bold text-lg px-8 py-4 rounded-2xl text-center hover:bg-blue-50 transition-colors">
+          5大特典を受け取る
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       SECTION B  PAIN POINTS
+  ====================================================== -->
+  <section class="bg-slate-50 px-5 py-16">
+    <div class="max-w-2xl mx-auto">
+
+      <div class="text-center mb-10">
+        <p class="text-xs font-bold text-blue-500 tracking-widest uppercase mb-3">Pain</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
+          こんなお悩みが毎日のように<br>届いています。
+        </h2>
+        <div class="w-10 h-0.5 bg-blue-400 mx-auto mt-5"></div>
+      </div>
+
+      <div class="space-y-4">
+
+        <!-- Pain 1 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 flex gap-4 shadow-sm">
+          <div class="flex-shrink-0 mt-0.5">
+            <div class="w-8 h-8 rounded-full bg-amber-50 flex items-center justify-center">
+              <!-- Warning triangle (Lucide-style) -->
+              <svg class="w-5 h-5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>
+              </svg>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+            SNSでは「今日もお客様に感謝！」と発信する裏で、<strong class="text-gray-900">同業者の予約満了のストーリーズを見て絶望</strong>
+          </p>
+        </div>
+
+        <!-- Pain 2 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 flex gap-4 shadow-sm">
+          <div class="flex-shrink-0 mt-0.5">
+            <div class="w-8 h-8 rounded-full bg-amber-50 flex items-center justify-center">
+              <svg class="w-5 h-5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>
+              </svg>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+            クーポンサイトの安値でやってくる新規客に、<strong class="text-gray-900">身を粉にして毎日ペコペコと頭を下げている</strong>
+          </p>
+        </div>
+
+        <!-- Pain 3 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 flex gap-4 shadow-sm">
+          <div class="flex-shrink-0 mt-0.5">
+            <div class="w-8 h-8 rounded-full bg-amber-50 flex items-center justify-center">
+              <svg class="w-5 h-5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>
+              </svg>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+            友人からの「社長、すごいね！」という言葉が重りとなり、<strong class="text-gray-900">弱音を吐く場所がない</strong>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       SECTION C  BENEFIT / SOLUTION  +  CTA
+  ====================================================== -->
+  <section class="bg-white px-5 py-16">
+    <div class="max-w-2xl mx-auto text-center">
+
+      <p class="text-xs font-bold text-blue-500 tracking-widest uppercase mb-3">Solution</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8 leading-snug">
+        この個別相談では<br>あなたのサロンが
+      </h2>
+
+      <!-- Highlight box -->
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl px-6 py-8 md:px-12 md:py-12 mb-10">
+        <p class="text-xl md:text-2xl font-black text-gray-900 leading-relaxed">
+          <span class="text-4xl md:text-5xl text-blue-600 font-black">最短最速</span>で<br>
+          安売りを卒業し<br>
+          <span class="underline decoration-blue-400 decoration-2 underline-offset-4 text-blue-800">
+            通帳を見て安心できる状態
+          </span>を<br>
+          実現する方法をお見せします。
+        </p>
+      </div>
+
+      <!-- CTA -->
+      <p class="text-red-500 font-bold text-sm mb-4 tracking-wide">▼ 残り枠あとわずか！今すぐ個別相談を予約！</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://liff.line.me/2009174784-0WuronMg?liff_id=2009174784-0WuronMg&is=xxIhcQGyML"
+           class="btn-primary text-white font-bold text-lg px-8 py-4 rounded-2xl text-center">
+          無料相談に応募する →
+        </a>
+        <a href="https://www.notion.so/5-3067c8960fd480c8955cfa18896edad2?source=copy_link"
+           class="inline-block border-2 border-blue-600 text-blue-600 font-bold text-lg px-8 py-4 rounded-2xl text-center hover:bg-blue-50 transition-colors">
+          5大特典を受け取る
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       SECTION E  TESTIMONIALS  +  CTA
+  ====================================================== -->
+  <section class="bg-slate-50 px-5 py-16">
+    <div class="max-w-2xl mx-auto">
+
+      <div class="text-center mb-10">
+        <p class="text-xs font-bold text-blue-500 tracking-widest uppercase mb-3">Voice</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
+          過去に無料相談をした人の<br>実際の声
+        </h2>
+        <div class="w-10 h-0.5 bg-blue-400 mx-auto mt-5"></div>
+      </div>
+
+      <div class="space-y-6">
+
+        <!-- ── Card 1 ── -->
+        <div class="bg-white border border-blue-100 rounded-2xl p-6 shadow-sm">
+          <!-- Header: age + type (bold for trust) -->
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+              <!-- Person icon -->
+              <svg class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+              </svg>
+            </div>
+            <p class="font-bold text-gray-900 text-sm">37歳・個人ネイルサロン</p>
+          </div>
+          <!-- Quote with decorative large " -->
+          <div class="relative pl-7">
+            <span class="absolute top-0 left-0 text-5xl text-blue-100 font-serif leading-none select-none" aria-hidden="true">"</span>
+            <p class="text-gray-700 leading-loose text-sm md:text-base">
+              予約表が埋まっていれば安心だと思っていました。でも、客単価を聞いた時に「これ、もっと伸ばせますよ」と言われた時は<strong class="text-gray-900">手が震えました</strong>。論理的にどこが課題でどうやって伸ばしていくか丁寧に教えてくださいました。この個別相談のおかげでようやく<strong class="text-gray-900">「安売り」からの抜け出し方</strong>がわかりました。
+            </p>
+          </div>
+        </div>
+
+        <!-- ── Card 2 ── -->
+        <div class="bg-white border border-blue-100 rounded-2xl p-6 shadow-sm">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+              </svg>
+            </div>
+            <p class="font-bold text-gray-900 text-sm">42歳・エステサロン経営</p>
+          </div>
+          <div class="relative pl-7">
+            <span class="absolute top-0 left-0 text-5xl text-blue-100 font-serif leading-none select-none" aria-hidden="true">"</span>
+            <p class="text-gray-700 leading-loose text-sm md:text-base">
+              毎日2時間かけてリール動画を作っても、予約は週に1件。相談で<strong class="text-gray-900">投稿には構成や載せるべきテーマがしっかりとしていないと予約にはつながらない</strong>ことがわかりました。また、予約ボタンを押させるまでの「設計」が1ミリもできていないことを具体的に指摘され、<strong class="text-gray-900">予約が入らない本質的な原因</strong>に気付かされました。
+            </p>
+          </div>
+        </div>
+
+        <!-- ── Card 3 ── -->
+        <div class="bg-white border border-blue-100 rounded-2xl p-6 shadow-sm">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+              </svg>
+            </div>
+            <p class="font-bold text-gray-900 text-sm">31歳・プライベートサロン</p>
+          </div>
+          <div class="relative pl-7">
+            <span class="absolute top-0 left-0 text-5xl text-blue-100 font-serif leading-none select-none" aria-hidden="true">"</span>
+            <p class="text-gray-700 leading-loose text-sm md:text-base">
+              「いつか報われる」と自分に言い聞かせてきましたが、相談で<strong class="text-gray-900">今の課題が明確になり</strong>焦りましたがその場で現実逃避をやめました。出た課題を1つ一つ解決していき、<strong class="text-gray-900">まだまだ希望が持てることが分かり安心</strong>しました。
+            </p>
+          </div>
+        </div>
+
+        <!-- ── Card 4 ── -->
+        <div class="bg-white border border-blue-100 rounded-2xl p-6 shadow-sm">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+              </svg>
+            </div>
+            <p class="font-bold text-gray-900 text-sm">45歳・美容室オーナー</p>
+          </div>
+          <div class="relative pl-7">
+            <span class="absolute top-0 left-0 text-5xl text-blue-100 font-serif leading-none select-none" aria-hidden="true">"</span>
+            <p class="text-gray-700 leading-loose text-sm md:text-base">
+              技術さえ磨けば客は来ると思っていましたが、大きな間違いでした。個別相談では、<strong class="text-gray-900">私の技術をどうメニューに設計し、差別化をするか</strong>徹底的にアドバイスしてもらいました。今では、<strong class="text-gray-900">客単価を3,000円上げて安売りサロンから脱却</strong>することができました。
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /space-y-6 -->
+
+      <!-- CTA after testimonials -->
+      <div class="mt-10 text-center">
+        <p class="text-red-500 font-bold text-sm mb-4 tracking-wide">▼ 残り枠あとわずか！今すぐ個別相談を予約！</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://liff.line.me/2009174784-0WuronMg?liff_id=2009174784-0WuronMg&is=xxIhcQGyML"
+             class="btn-primary text-white font-bold text-lg px-8 py-4 rounded-2xl text-center">
+            無料相談に応募する →
+          </a>
+          <a href="https://www.notion.so/5-3067c8960fd480c8955cfa18896edad2?source=copy_link"
+             class="inline-block border-2 border-blue-600 text-blue-600 font-bold text-lg px-8 py-4 rounded-2xl text-center hover:bg-blue-50 transition-colors">
+            5大特典を受け取る
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       SECTION F  LOGIC / REASON  +  FINAL CTA
+  ====================================================== -->
+  <section class="bg-white px-5 py-16">
+    <div class="max-w-2xl mx-auto">
+
+      <!-- Bridge copy -->
+      <div class="text-center mb-12">
+        <p class="text-lg md:text-xl text-gray-700 leading-loose mb-5">
+          いくらセミナーを受けたり本を読んでも、<br>
+          その場では分かった気になって<br>
+          <strong class="text-gray-900">結局自分のサロンに落とし込めないで終わる。</strong>
+        </p>
+        <p class="text-gray-500 mb-10">この繰り返しでしたよね。</p>
+
+        <!-- "Not your fault" highlight (left-border accent) -->
+        <div class="bg-blue-50 border-l-4 border-blue-500 rounded-r-2xl px-6 py-6 md:px-8 text-left mb-8">
+          <p class="text-xl md:text-2xl font-black text-gray-900 leading-relaxed">
+            あなたがいくら学んでも成果が出なかったのは
+          </p>
+          <p class="text-2xl md:text-3xl font-black text-blue-600 mt-1">
+            あなたのせいではありません。
+          </p>
+        </div>
+
+        <!-- Logic keyword -->
+        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+          これは全て<strong class="text-blue-700 text-xl">論理と構造</strong>がなっていないからです。
+        </p>
+        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+          ただ「単価はあげましょう」「差別化が大事です」と言われても<br>
+          それを<strong class="text-gray-800">どうやってやるのかが分からない。</strong>
+        </p>
+      </div>
+
+      <!-- What we do in consultation -->
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8 mb-12">
+        <h3 class="text-xl md:text-2xl font-bold text-gray-900 text-center mb-1">
+          今回の無料相談で
+        </h3>
+        <p class="text-blue-600 font-bold text-center mb-7">これを全て解決します。</p>
+
+        <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">無料個別相談で行うこと：</p>
+
+        <ul class="space-y-3 mb-8">
+          <!-- Checklist item 1 -->
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mt-0.5">
+              <!-- Check icon -->
+              <svg class="w-3.5 h-3.5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+              </svg>
+            </div>
+            <p class="text-gray-700 text-sm md:text-base"><strong class="text-gray-900">あなたの今の課題</strong>は何か</p>
+          </li>
+          <!-- Checklist item 2 -->
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mt-0.5">
+              <svg class="w-3.5 h-3.5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+              </svg>
+            </div>
+            <p class="text-gray-700 text-sm md:text-base"><strong class="text-gray-900">どうやって解決するのか</strong></p>
+          </li>
+          <!-- Checklist item 3 -->
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mt-0.5">
+              <svg class="w-3.5 h-3.5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+              </svg>
+            </div>
+            <p class="text-gray-700 text-sm md:text-base"><strong class="text-gray-900">具体的なToDoリスト</strong>を提示　します</p>
+          </li>
+        </ul>
+
+        <div class="border-t border-blue-100 pt-6 text-center">
+          <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+            これによりあなたのサロンは安売りから脱却し、<br>
+            <strong class="text-blue-700 text-base md:text-lg">高単価満席サロンへ最大限近づけます。</strong>
+          </p>
+        </div>
+      </div>
+
+      <!-- Final CTA block -->
+      <div class="text-center">
+        <p class="text-red-500 font-bold text-sm mb-4 tracking-wide">▼ 残り枠あとわずか！今すぐ個別相談を予約！</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-4">
+          <a href="https://liff.line.me/2009174784-0WuronMg?liff_id=2009174784-0WuronMg&is=xxIhcQGyML"
+             class="btn-primary text-white font-bold text-xl px-10 py-5 rounded-2xl text-center">
+            無料相談に応募する →
+          </a>
+          <a href="https://www.notion.so/5-3067c8960fd480c8955cfa18896edad2?source=copy_link"
+             class="inline-block border-2 border-blue-600 text-blue-600 font-bold text-lg px-8 py-5 rounded-2xl text-center hover:bg-blue-50 transition-colors">
+            5大特典を受け取る
+          </a>
+        </div>
+        <p class="text-gray-400 text-xs">※ 登録・相談は完全無料です。営業・勧誘は一切ありません。</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="bg-gray-900 text-gray-500 text-xs text-center py-6 px-4">
+    <p>&copy; 2026 All Rights Reserved.</p>
+  </footer>
+
+
+</body>
+</html>
